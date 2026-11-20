@@ -8,7 +8,7 @@ def load_tasks():
         try:
             with open(FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
-        except (json.JSONDecodeError, OSErro):
+        except (json.JSONDecodeError, OSError):
             return []
     return []
 
